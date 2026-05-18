@@ -24,7 +24,7 @@
   border-radius: 24px;
 
   /* DARK GLASS EFFECT */
-  /* background: rgb(27 29 34); */
+  backdrop-filter: blur(10px);
   background : rgb(27 29 34 / 35%);
   
 
