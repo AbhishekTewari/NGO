@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <HeroBanner />
-      <UpcomingEvents />
       <Compaigns />
+      <UpcomingEvents />
       <CampaignsCard />
       <Impact />
     </div>
