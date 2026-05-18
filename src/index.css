@@ -1,0 +1,18 @@
+* {
+  caret-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+/* ========================= */
+/* BODY */
+/* ========================= */
+
+body {
+  background: #f5f7fb;
+  font-family: "Poppins", sans-serif;
+}

@@ -1,0 +1,222 @@
+.campaignsCard {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.campaignsCard__container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.campaignsCard__headingWrap {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.campaignsCard__heading-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 110px;
+}
+
+.campaignsCard__blob {
+  position: absolute;
+  top: -7px; left: 0;
+  width: 100%; height: 100%;
+}
+
+.campaignsCard__heading {
+  position: relative;
+  font-size: 44px;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0 0 14px;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  padding: 20px 60px;
+}
+
+.campaignsCard__subHeading {
+  font-size: 17px;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.campaignsCard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.campaignsCard__card {
+  background: #ffffff;
+  border-radius: 28px;
+  overflow: hidden;
+  transition: 0.4s ease;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.06);
+  position: relative;
+}
+
+.campaignsCard__card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+.campaignsCard__imageWrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.campaignsCard__image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  transition: 0.5s ease;
+  display: block;
+}
+
+.campaignsCard__card:hover .campaignsCard__image {
+  transform: scale(1.08);
+}
+
+.campaignsCard__donateBtn {
+    position: absolute;
+    right: 7px;
+    top: 10px;
+    background: linear-gradient(135deg, #ff6b35, #ff8c42);
+    color: #fff;
+    padding: 13px 24px;
+    border-radius: 60px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(255, 107, 53, 0.35);
+    z-index: 5;
+}
+
+.campaignsCard__donateBtn:hover {
+  transform: translateY(-3px);
+}
+
+.campaignsCard__content {
+  padding: 18px 15px 15px;
+}
+
+.campaignsCard__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #111827;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+.campaignsCard__stats {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+
+.campaignsCard__stat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.campaignsCard__stat svg {
+  color: #ff6b35;
+  font-size: 16px;
+}
+
+.campaignsCard__progressArea {
+  width: 100%;
+}
+
+.campaignsCard__progressTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #374151;
+}
+
+.campaignsCard__progressBar {
+  width: 100%;
+  height: 14px;
+  background: #e5e7eb;
+  border-radius: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.campaignsCard__progressFill {
+  height: 100%;
+  border-radius: 30px;
+  background: linear-gradient(
+    90deg,
+    #ff6b35,
+    #ff9f5a
+  );
+  width: 0;
+  transition: width 2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes campaignsCardProgress {
+  from {
+    width: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .campaignsCard__heading {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  .campaignsCard {
+    padding: 50px 0px;
+  }
+  .campaignsCard__container{
+    padding: 20px;
+  }
+
+  .campaignsCard__heading {
+    font-size: 32px;
+  }
+
+  .campaignsCard__subHeading {
+    font-size: 15px;
+  }
+
+  .campaignsCard__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .campaignsCard__title {
+    font-size: 22px;
+  }
+
+  .campaignsCard__image {
+    height: 230px;
+  }
+
+  .campaignsCard__donateBtn {
+    padding: 11px 18px;
+    font-size: 14px;
+  }
+}
