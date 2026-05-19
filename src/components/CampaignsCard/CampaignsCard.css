@@ -189,7 +189,7 @@
 
 @media (max-width: 768px) {
   .campaignsCard {
-    padding: 50px 0px;
+    padding: 0px 0px;
   }
   .campaignsCard__container{
     padding: 20px;

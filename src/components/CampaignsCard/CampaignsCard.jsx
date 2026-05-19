@@ -57,7 +57,7 @@ const CampaignsCard = () => {
           if (entry.isIntersecting) {
             setTimeout(() => {
               setStartAnimation(true);
-            }, 500);
+            }, 200);
 
             observer.disconnect();
           }
